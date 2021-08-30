@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'lucida_sansregular';
+    src: url('../fonts/lucida_sans_regular-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lucida_sansbold_italic';
+    src: url('../fonts/lucida_sans_bold_italic-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_bold_italic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lucida_sansbold';
+    src: url('../fonts/lucida_sans_bold-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lucida_sansitalic';
+    src: url('../fonts/lucida_sans_italic-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +38,7 @@
 
 body {
     background-color: grey;
+    font-family: 'luscida_sansregular', Helvetica, sans-serif;
 }
 
 main {
@@ -13,22 +47,33 @@ main {
     max-width: 1000px;
 }
 
-.site-logo__img {
-    margin: auto;
-    display: block;
-    padding: 7px 0;
+.top-account-panel {
+    padding-left: 50px;
+    padding-top: 13px;
+    display: flex;
+    height: 32px;
 }
 
-.top-nav-panel {
-    padding-left: 53px;
-    padding-top: 21px;
-    display: flex;
+.phone-icon-block {
+    width: 27px;
 }
 
 .phone-icon {
+    padding-left: 3px;
     padding-bottom: 4px;
     vertical-align: middle;
-    width: 20px;
+}
+
+.tube-phone-icon {
+    position: relative;
+    bottom: 24px;
+    left: 6px;
+}
+
+
+.tel-contacts {
+    display: flex;
+    padding-top: 5px;
 }
 
 .tel-contacts a {
@@ -39,17 +84,466 @@ main {
 }
 
 .login-form {
+    margin-bottom: 6px;
     margin-left: 16px;
     display: flex;
     border-radius: 3px;
-    background: linear-gradient(0deg, rgba(13,54,90,1) 0%, rgba(30,99,131,1) 47%);  
+    background: linear-gradient(0deg, rgba(13,54,90,1) 37%, rgba(30,99,131,1) 71%);
+    box-shadow: 1px 2px 3px 0px rgb(0 0 0 / 47%);
+    width: 495px;
 }
 
 .user-icon {
-    width: 25px;
+    padding-left: 7px;
+    padding-right: 3px;
+    width: 14px;
+    height: 17px;
+    padding-top: 5px;
+}
+
+.login__form {
+    padding-top: 3px;
 }
 
 .login-form a {
     text-decoration: none;
     color: white;
+}
+
+.authorization-links {
+    font-size: 11px;
+    padding-top: 5px;
+    color: white;
+    padding-left: 7px
+}
+
+.forgot-password {
+    padding-left: 25px;
+    padding-top: 5px;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.forgot-password a {
+    color: #bfbfbf;
+    
+}
+
+.data-input {
+    font-size: 12px;
+    width: 110px;
+    border-radius: 2px;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 72px;
+    margin-left: 17px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    height: 20px;
+}
+
+.nav-icons a {
+    padding-top: 3px;
+}
+
+.nav-icons a:first-child {
+    padding-left: 2px;
+}
+
+.nav-icons a:last-child {
+    padding-right: 5px;
+}
+
+.nav-icons img {
+    padding-bottom: 3px;
+}
+
+.nav-icons :nth-child(2) {
+    margin: 0 5px;
+}
+
+.site-logo__img {
+    margin: auto;
+    display: block;
+    padding: 5px 0;
+}
+
+/* navigation panel styles */
+.navigation-panel {
+    width: 909px;
+    margin: auto;
+    display: flex;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 44%, rgba(80,88,96,1) 95%);
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px 0px rgb(0 0 0 / 47%);
+}
+
+.navigation-panel__horisontal-list {
+    width: 587px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 14px;
+    height: 34px;
+    gap: 25px;
+}
+
+.navigation-panel__horisontal-list:first-child {
+    padding-left: 85px;
+}
+
+.navigation-panel__horisontal-list li {
+    padding: 6px 0;
+    color: #929b9f;
+}
+
+.navigation-panel__horisontal-list a {
+    text-decoration: none;
+    color: #929b9f;
+}
+
+.navigation-panel__horisontal-list li:hover {
+    padding: 5px 0;
+    border-radius: 100px;
+    background: linear-gradient(0deg, rgba(12,52,88,1) 20%, rgba(31,102,134,1) 100%);
+    color: white;
+}
+
+.navigation-panel__horisontal-list a:hover {
+    color: white;
+}
+
+.shopping {
+    display: flex;
+    font-size: 12px;
+}
+
+.shopping * {
+    margin: auto;
+}
+
+.shopping p {
+    padding-left: 5px;
+    color: #929b9f;
+}
+
+.shopping span {
+    color: #0d5a8f;
+}
+
+.shopping p:last-child {
+    padding-left: 12px;
+}
+
+.total-price {
+    padding-left: 5px;
+}
+
+.shopping img {
+    width: 21px;
+    height: 17px;
+    padding-left: 9px;
+}
+
+.search-forms {
+    padding-top: 13px;
+    display: flex;
+    width: 902px;
+    margin: auto;
+    gap: 12px;
+}
+
+.search-forms div {
+    height: 133px;
+    border: 1px solid black;
+    border-radius: 17px;
+}
+
+.search-by-car {
+    width: 414px;
+}
+
+.tires-search {
+    width: 191px;
+}
+
+.disks-search {
+    width: 266px;
+}
+
+.content {
+    display: flex;
+    padding-top: 18px;
+}
+
+/* Left side list styles */
+.left-side-list {
+    padding-left: 44px;
+    padding-right: 15px;
+}
+
+.products-list {
+    list-style: none;
+}
+
+.main-chapter {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 14px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    justify-content: flex-start;
+    box-shadow: 2px 3px 3px 0px rgb(0 0 0 / 47%);
+}
+
+.cat-icon {
+    padding: 2px;
+    max-width: 25px;
+    max-height: 25px;
+    display: flex;
+}
+
+.catalogue-icon-shape {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.catalogue-icon {
+    position: relative;
+    right: 17px;
+    top: 3px;
+    height: 14px;
+    width: 12px;
+}
+
+.main-chapter span {
+    padding-top: 6px;
+    padding-right: 8px;
+}
+
+.chapter {
+    padding: 0 5px;
+    font-size: 12px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    line-height: 24px;
+    width: 140px   
+}
+
+.chapter-icon {
+    vertical-align: middle;
+    float: left;
+}
+
+.chapter span {
+    padding-left: 4px;
+}
+
+.tires-list-item {
+    margin-top: 10px;
+    margin-left: 55px;
+    font-size: 12px;      
+}
+
+.tires-list-item:first-child {
+    margin-top: 5px;
+}
+
+.tires-list-item:last-child {
+    margin-bottom: 5px;
+}
+
+.item-link {
+    text-decoration: none;
+    color: #465961;
+}
+
+.item-link:hover {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 15px;
+    color: #0c3256;
+}
+
+/* central content styles*/
+.central-content {
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(147,167,176,1) 0%, rgba(228,231,232,1) 100%);
+    padding-top: 15px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 16px 26px;
+    width: 525px;
+}
+
+.tire {
+    text-align: center;
+}
+
+.manufacturer-name {
+    font-weight: bold;
+}
+
+.model-name {
+    font-size: 12px;
+}
+
+.price {
+    font-weight: bold;
+    font-style: italic;
+    color: #0c3256;
+}
+
+.tire p {
+    text-align: center;
+    line-height: 13px
+}
+
+.tire a {
+    color: #206988;
+    text-decoration: none;
+}
+
+.tire a:visited {
+    color: #206988;
+    text-decoration: none;
+}
+
+.container {
+    padding: 5px 0;
+    width: 135px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.container img {
+    display: block;
+    margin: auto;
+}
+
+/* Right side checklist */
+.right-side-checklist {
+    padding-left: 15px;
+}
+
+.manufacturer-list {
+    list-style: none;
+}
+
+.manufacturer-list > ul {
+    list-style: none;
+}
+
+.right-main-chapter {
+    width: 180px;
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 14px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    justify-content: flex-start;
+    box-shadow: 2px 3px 3px 0px rgb(0 0 0 / 47%);
+}
+
+.right-main-chapter-name {
+    padding-top: 6px;
+}
+
+.right-chapter {
+    padding: 0 5px;
+    font-size: 12px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    line-height: 24px;
+    width: 120px
+}
+
+.right-chapter,
+.right-chapter-list {
+    margin-left: 15px;
+}
+
+.chapter-item {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.chapter-item:first-child {
+    margin-top: 5px;
+}
+
+.chapter-item:last-child {
+    margin-bottom: 10px;
+}
+
+.brand-choice {
+    padding-left: 10px;
+}
+
+.tire-manufacturer-name1 {
+    
+}
+
+.choose {
+    margin-left: 25px;
+    margin-top: 16px;
+    border-radius: 100px;
+    padding: 5px 12px;
+    border: none;
+    color: white;
+    background: linear-gradient(0deg, rgba(13,54,90,1) 37%, rgba(30,99,131,1) 71%);
+    box-shadow: 2px 3px 3px 0px rgb(0 0 0 / 47%);
+    font-size: 12px;
+}
+
+/* footer styles */
+.brands-logos {
+    padding-top: 58px;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.bottom-space {
+    margin: 24px auto;
+    width: 910px;
+    height: 120px;
+    background-color: #213a4d;
+}
+
+.bottom-navigation {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.bottom-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-navigation a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-navigation a:hover {
+    color: #4792af;
+}
+
+.global-vision {
+    text-align: center;
+    color: #7a4641;
+    font-size: 10px;
+    padding-top: 15px;
 }
